@@ -1,11 +1,328 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>canva</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            height: 79vh;
+            width: 80%;
+            background-color: antiquewhite;
+            margin: 10vh auto;
+           position: relative;
+        }
+        .box1{
+            width: 30%;
+            height: 79vh;
+            background-color: yellow;
+           
+            align-content:space-around;
+          
+        }
+        .one{
+            width: 100%;
+            height: 19vh;
+            background-color: aquamarine;
+            justify-content: space-between;
+            display: flex;
+            
+        }
+        .eleven{
+            width:49.50%;
+            height: 19vh;
+            background-color: tomato;
+
+        }
+        .twelve{
+            width:49.50%;
+            height: 19vh;
+            background-color: turquoise;
+
+        }
+        .two{
+            width: 100%;
+            height: 19vh;
+            background-color: red;
+            margin-top: 1vh;
+            justify-content: space-between;
+            display: flex;
+        }
+        .fourtin{
+            width:49.50%;
+            height: 19vh;
+            background-color: tomato;
+        }
+        .fiftin{
+            width:49.50%;
+            height: 19vh;
+            background-color: turquoise;
+        }
+        .three{
+            width: 100%;
+            height: 19vh;
+            background-color: blue;
+            margin-top: 1vh;
+
+        }
+        .four{
+            width: 100%;
+            height: 19vh;
+            background-color: green;
+            margin-top: 1vh;
+
+        }
+        .box2{
+            width: 40%;
+            height: 30vh;
+          position: absolute;
+            background-color: hotpink;
+           top: 25vh;
+           left: 45%;
+           display: flex;
+        }
+        .five{
+            height: 30vh;
+            width: 70%;
+            background-color: blueviolet;
+            padding: 10%;
+            
+        }
+        input{
+            margin-top: 4vh;
+            margin-left:40px ;
+        }
+   
+    .six{
+        height: 30vh;
+        width: 30%;
+        background-color: burlywood;
+        display: flex;
+        align-self: center;
+        /* z-index: -1; */
+        
+    }
+    .seven{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: brown;
+        align-self: center;
+        /* z-index: +2; */
+        overflow: hidden;
+       
+        
+    }
+    .eleven ul{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10%;
+
+    }
+    .eleven ul li{
+        width: 40px;
+        height: 40px;
+        list-style: none;
+        margin: 2%;
+    }
+    .twelve ul{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10%;
+    }
+    .twelve ul li{
+        width: 40px;
+        height: 40px;
+        list-style: none;
+        margin: 2%;
+    }
+    .fourtin ul{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10%;
+    }
+    .fourtin ul li{
+        width: 40px;
+        height: 40px;
+        list-style: none;
+        margin: 2%;
+    }
+    .bgelevenred{
+        background-color: red;
+    }
+    .bgelevenyellow{
+        background-color: yellow;
+    }
+    .bgelevengreen{
+        background-color: green;
+    }
+    .bgelevenblue{
+        background-color: blue;
+    }
+    .bgelevenvolit{
+        background-color: blueviolet ;
+    }
+    .bgelevenhotpink{
+        background-color: hotpink; 
+    }
+    .fiftin ul{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10%;
+    }
+    .fiftin ul li{
+        width: 40px;
+        height: 40px;
+        list-style: none;
+        margin: 2%;
+
+    }
+    .three ul{
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 10%; */
+    }
+    .three ul li{
+        width: 75px;
+        height: 20px;
+        list-style: none;
+        margin-left: 2%;
+        color: tan;
+        background-color: teal;
+        /* font-size: medium; */
+
+    }
+    .four ul{
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 10%; */
+    }
+    .four ul li{
+        width: 70px;
+        height: 40px;
+        list-style: none;
+        margin: 2%;
+        color: tan;
+        background-color: teal;
+        /* font-size: medium; */
+
+    }
+
+    </style>
 </head>
 <body>
-    <h1>visiting card</h1>
+ 
+    <div class="main">
+        <div class="box1">
+            <div class="box one">
+                <div class="eleven" >
+                    <ul>
+                        <li class="bgelevenred"  onclick="document.getElementById('fivebg').style.backgroundColor='red'"></li>
+                        <li class="bgelevenyellow" onclick="document.getElementById('fivebg').style.backgroundColor='yellow'"></li>
+                        <li class="bgelevengreen" onclick="document.getElementById('fivebg').style.backgroundColor='green'"></li>
+                        <li class="bgelevenblue" onclick="document.getElementById('fivebg').style.backgroundColor='blue'"></li>
+                        <li class="bgelevenvolit" onclick="document.getElementById('fivebg').style.backgroundColor='blueviolet'"></li>
+                        <li class="bgelevenhotpink" onclick="document.getElementById('fivebg').style.backgroundColor='hotpink'"></li>
+                       
+                    </ul>
+                </div>
+                <div class="twelve">
+                    <ul>
+                        <li class="bgelevenred"   onclick="document.getElementById('sixcolor').style.backgroundColor='red'"></li>
+                        <li class="bgelevenyellow" onclick="document.getElementById('sixcolor').style.backgroundColor='yellow'"></li>
+                        <li class="bgelevengreen" onclick="document.getElementById('sixcolor').style.backgroundColor='green'"></li>
+                        <li class="bgelevenblue" onclick="document.getElementById('sixcolor').style.backgroundColor='blue'"></li>
+                        <li class="bgelevenvolit" onclick="document.getElementById('sixcolor').style.backgroundColor='blueviolet'"></li>
+                        <li class="bgelevenhotpink" onclick="document.getElementById('sixcolor').style.backgroundColor='hotpink'"></li>
+                  
+                    </ul>
+                </div>
+            </div>
+            <div class="box two">
+                <div class="fourtin">
+                    <ul>
+                      
+                        <li class="bgelevenred"  onclick="document.getElementById('txt').style.backgroundColor='red'"></li>
+                        <li class="bgelevenyellow" onclick="document.getElementById('txt1').style.backgroundColor='yellow'"></li>
+                        <li class="bgelevengreen" onclick="document.getElementById('txt2').style.backgroundColor='green'"></li>
+                        <li class="bgelevenblue" onclick="document.getElementById('txt').style.backgroundColor='blue'"></li>
+                        <li class="bgelevenvolit" onclick="document.getElementById('txt1').style.backgroundColor='blueviolet'"></li>
+                        <li class="bgelevenhotpink" onclick="document.getElementById('txt2').style.backgroundColor='hotpink'"></li>
+                    </ul>
+                </div>
+                <div class="fiftin" >
+                    <ul>
+                        <li onclick="document.getElementById('pro').src='profile/pro1.jpg'"><img src="profile/pro1.jpg" height="100%" width="100%" alt=""></li>
+                        <li onclick="document.getElementById('pro').src='profile/pro2.jpg'"><img src="profile/pro2.jpg" height="100%" width="100%" alt=""></li>
+                        <li onclick="document.getElementById('pro').src='profile/pro3.jpg'"><img src="profile/pro3.jpg" height="100%" width="100%" alt=""></li>
+                        <li onclick="document.getElementById('pro').src='profile/pro4.jpg'"><img src="profile/pro4.jpg" height="100%" width="100%" alt=""></li>
+                        <li onclick="document.getElementById('pro').src='profile/pro5.jpg'"><img src="profile/pro5.jpg" height="100%" width="100%" alt=""></li>
+                        <li onclick="document.getElementById('pro').src='profile/pro6.jpg'"><img src="profile/pro6.jpg" height="100%" width="100%" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box three">
+                <p>textTransform</p>
+                <ul>
+                    <li onclick="document.getElementById('fivebg').style.textTransform='capitalize'">capitalize</li>
+                    <li onclick="document.getElementById('fivebg').style.textTransform='lowercase'">lowercase</li>
+                    <li onclick="document.getElementById('fivebg').style.textTransform='uppercase'">uppercase</li>
+                </ul>
+                <p>color</p>
+                <ul>
+                    <li onclick="document.getElementById('fivebg').style.color='teal'">teal</li>
+                    <li onclick="document.getElementById('fivebg').style.color='tan'">tan</li>
+                    <li onclick="document.getElementById('fivebg').style.color='aquamarine'">aquamarine</li>
+                </ul>
+                <p>fontSize</p>
+                <ul>
+                    <li onclick="document.getElementById('fivebg').style.fontSize='small'">small</li>
+                    <li onclick="document.getElementById('fivebg').style.fontSize='medium'">medium</li>
+                    <li onclick="document.getElementById('fivebg').style.fontSize='larger'">larger</li>
+                </ul>
+            </div>
+            <div class="box four">
+               
+            </div>
+
+        </div>
+        <div class="box2">
+            <div id="fivebg" class="five" >
+<!--                
+                <input  id="txt" type="text" placeholder="Enter Your Name">
+                <input   id="txt1" type="email" placeholder="Enter Your Email">
+                <input  id="txt2" type="number" placeholder="Enter Your Number">
+                <input type="submit" > -->
+            <P>Name:- Amrit Pal
+                <br>
+                Address:- Ghaziabad
+                <br>
+                Email:- abc@gmail.com
+            </P>
+            
+            
+            </div>
+           <div class="six" id="sixcolor">
+           
+               
+            <div   class="seven">
+                <img src="profile/pro1.jpg" id="pro" width="100%" height="100%" alt="profile-image">
+            </div>
+
+
+        </div>
+
+
+        </div>
+
+
+    </div>
 </body>
 </html>
